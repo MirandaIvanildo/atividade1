@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paginação</title>
+    <style>
+        * {
+            font-family: arial, sans-serif;
+            font-size: 16px;
+            color: rgb(64, 64, 64);
+        }
+
+        a {
+            text-decoration: none;
+            cursor: inherit;
+            color: inherit;
+        }
+
+        .paginacao {
+            list-style: none;
+        }
+
+        .paginacao li {
+            display: inline-block;
+            height: 32px;
+            width: 30px;
+            margin-right: 2px;
+            margin-left: 2px;
+            cursor: pointer;
+            /*background-color: steelblue;*/
+            text-align: center;
+            line-height: 32px;
+            border-radius: 4px;
+            border: 1px solid transparent
+        }
+
+        .paginacao_anterior:hover, 
+        .paginacao_numero:hover, 
+        .paginacao_proximo:hover {
+            border: 1px solid rgb(238, 238, 238);
+        }
+
+        .paginacao_anterior:active, 
+        .paginacao_numero:active,
+        .paginacao_proximo:active {
+            background-color: rgb(0, 131, 202, 0.467);
+            color: rgb(255, 255, 255);
+        }
+        
+
+        .paginacao_selecionado {
+            background-color: rgb(0, 131, 202);
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Paginação</h1>
+    </header>
+    <ul class="paginacao">
+        <li class="paginacao_anterior"><a href="#"><</a>
+        <li class="paginacao_numero"><a href="#">1</a></li>
+        <li class="paginacao_numero"><a href="#">2</a></li>
+        <li class="paginacao_numero paginacao_selecionado"><a href="#">3</a></li>
+        <li class="paginacao_numero"><a href="#">4</a></li>
+        <li class="paginacao_numero"><a href="#">5</a></li>
+        <li class="paginacao_numero">...</li>
+        <li class="paginacao_numero"><a href="#">7</a></li>
+        <li class="paginacao_proximo">
+            <a href="#">></a>
+        </li>
+
+    </ul>
+
+</body>
+</html>

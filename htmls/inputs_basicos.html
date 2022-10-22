@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs Basicos</title>
+    <style>
+        h1 {
+            border: solid 1px #000;
+            background-color: chartreuse;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1>Inputs Basicos</h1>
+        <hr>
+    </div>
+
+
+    <!-- hr serve para separar compo com a linha -->
+
+    <!-- div e section tem a mesma função de colocar as bordas-->
+    <section>
+    
+        <form action="https://www.globo.com" method="post">
+
+        <label>Nome</label> <br>
+        <input type="text" name="nome" class="" id=""/><br><br>
+
+        <label>Senha</label><br>
+        <input type="passwor" name="senha"><br><br>
+
+        <label>Opcôes</label><br>
+        <input type="radio" name="Opçôes">A <br>
+        <input type="radio" name="Opçôes">B <br>
+        <input type="radio" name="Opçôes">C <br><br>
+
+        <label>Multipla Escolha</label><br>
+        <input type="checkbox" name="multiplo">1 <br>
+        <input type="checkbox" name="Multiplo">2 <br>
+        <input type="checkbox" name="Multiplo">3 <br><br>
+
+        <label>Texto</label><br>
+        <textarea name="texto" id="" cols="30" rows="10"></textarea>
+
+        <label>Arquivo</label> <br>
+        <input type="file" name="arquivo" id=""><br><br>
+
+        <label>Sexo</label><br>
+        <select name="sexo" id="">
+            <option value="">Selecione</option>
+            <option value="Masculino">Masculino</option>
+            <option value="Feminino">Feminino</option>
+        </select><br><br><br><br>
+        <hr>
+
+
+        <label>Marcas de Carros</label><br>
+        <select name="carro" id="">
+            <optgroup label="Alemaes">
+                <option value="mercedes">mercedes</option>
+                <option value="audi">audi</option>
+            </optgroup>
+            <optgroup label="Suecos">
+                <option selected value="volvo">volvo</option>
+                <option value="saab">saab</option>
+            </optgroup>
+        </select><br><br><br>
+
+
+        <input type="button" value="Botao sem acao"><br><br>
+
+        <input type="submit" value="Enviar"><br><br>
+
+
+
+        </form>
+    </section>
+</body>
+</html>

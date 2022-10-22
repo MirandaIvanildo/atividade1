@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 4 - Box</title>
+
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        section {
+            margin-bottom: 20px;
+            background-color: silver;
+            padding: 10px;
+        }
+
+        #primeira-sessao > div {
+            background-color: #fff;
+            display: block;
+            width: 45%;
+            display: inline-block;
+            padding: 10px;
+            vertical-align: top;   /* vertical-aling serve para deixar margem alto ou seja masis pra cima*/
+            min-height: 180px;
+
+        }
+        
+
+        #caixa {
+            background-color: red;
+            width: 300px;
+            height: 300px;
+            padding: 10px;
+            margin-top: 100px;
+        }
+
+        #caixa2 {
+            background-color: black;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Exemplo 4</h1>
+    <section id="primeira-sessao">
+        <div>
+            <h2>Titulo da noticia 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque blanditiis alias doloremque quidem, iure laborum, in nesciunt fugit iste, qui hic deserunt quos consequatur facere molestias delectus quisquam ex corporis.</p>
+        </div>
+        <div>
+            <h2>Titulo da noticia 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ducimus, alias quod ab corporis sunt nulla quis minus, maxime ratione delectus in earum laboriosam voluptates doloremque? Esse numquam iure accusamus?</p>
+        </div>
+    </section>
+
+
+    <section>
+        <div>
+            <h2>Titulo da noticia 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque blanditiis alias doloremque quidem, iure laborum, in nesciunt fugit iste, qui hic deserunt quos consequatur facere molestias delectus quisquam ex corporis.</p>
+        </div>
+        <div>
+            <h2>Titulo da noticia 4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ducimus, alias quod ab corporis sunt nulla quis minus, maxime ratione delectus in earum laboriosam voluptates doloremque? Esse numquam iure accusamus?</p>
+        </div>
+    </section>
+
+    <div id="caixa">
+        <div id="caixa2"></div>
+    </div>
+</body>
+</html>

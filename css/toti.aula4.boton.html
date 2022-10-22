@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bomtão</title>
+
+    <style>
+        *{
+            font-family: -apple-system, sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 20px;
+        }
+
+        .botao {
+            display: inline-flex;
+            align-items: center;
+            border-width: 1px;
+            border-style: solid;
+            height: 32px;
+            width: fit-content;
+            border-radius: 16px;
+            /*padding: 16px;*/
+            padding-left: 16px;
+            padding-right: 16px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .botao_primario {
+            background-color: transparent;
+            color: #0a66c2;
+            border-color: #0a66c2;
+        }
+
+        .botao_primario:hover {
+            background-color: rgba(112, 181, 249, 0.2);
+            border-width: 2px;
+        }
+
+        .botao_primario:active {
+            background-color: rgba(112, 181, 249, 0.3);
+            color: #004182;
+            border-color: #004182;
+        }
+
+
+
+        .botao_secundario {
+            background-color: #0a66c2;
+            color: #fff;
+            border-color: transparent;
+
+        }
+
+        .botao_terciario {
+            background-color: transparent;
+            color: rgba(red, green, blue, alpha);
+            border-color: rgba(red, green, blue, alpha);
+        }
+    </style>
+
+</head>
+<body>
+    <button class="botao botao_primario">
+        <svg aria-hidden="true" role="none" xmlns="http://www.w3.org/2000/svg" id="hue-web-icons-sprite" style="display: none;"></svg>
+        <svg aria-hidden="true" role="none" xmlns="http://www.w3.org/2000/svg" id="hue-web-icons-sprite" style="display: none;"></svg>
+       <samp>Seguindo</samp></button>
+    <a href="#" class="botao botao_secundario">Visite o site</a>
+    <button class="botao botao_terciario">Mais</button>
+</body>
+</html>

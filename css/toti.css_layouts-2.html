@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: system-ui, sans-serif;
+        }
+
+        body {
+            /*height: 568px;
+            width: 320px;
+            border: 1px solid black;
+            margin: 10px auto;*/
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 40px;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            width: 100%;
+            max-width: 420px;
+        }
+
+        .titulo {
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 40px;
+            margin-top: 20px;
+        }
+
+        .subtitulo {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .usuario,
+        .senha {
+            margin-top: 20px;
+            font-size: 16px;
+            height: 52px;
+            border-radius: 4px;
+            border: 1px solid;
+            padding: 8px;
+        }
+
+        .link {
+            font-weight: 16px;
+            line-height: 32px;
+            font-weight: 600;
+            color: #0a66c2;
+            text-decoration: none;
+        }
+
+        .esqueceu_senha {
+            margin-top: 10px;
+        }
+
+        .login {
+            background-color: #0073b1;
+            color: #ffffff;
+            border: none;
+            border-radius: 28px;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 52px;
+            margin-top: 16px;
+        }
+
+        .criar_conta {
+            margin-top: 20px;
+        }
+
+        footer {
+            display: none;
+        }
+
+        
+        /*@media screen and (min-width: 770px) {
+            border {
+                max-width: 100vh
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                
+            }
+            main {
+                width: 416px;
+                margin: 0 auto;
+            }
+        }*/
+
+        .card {
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
+            padding: 24px 32px 32px 32px;
+            margin-top: 20px; /* isso serve para dar afastamento entre a margem e logotipo que esta encima*/
+        }
+
+        footer { /*isso é roda pé*/
+            display: flex; /* isso serve para todos frases que estão na roda pé fica aulado do outro*/
+            width: 100%;
+            justify-content: space-between; /*isso sever para agrupar as palavras e dar espaço entre frases*/
+        }
+
+
+
+        /*.body {
+            color: wheat;
+            font-size: 32px;
+        }
+
+        .primeira {
+            box-sizing: border-box;
+            background-color: blue;
+            border: 5px solid black;
+            padding: 10px;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+
+        .segunda {
+            box-sizing: content-box;
+            background-color: blue;
+            border: 20px solid black;
+            padding: 10px;
+            width: 100px;
+            right: 100px;
+            margin: 10px;
+        }*/
+    </style>
+</head>
+<body>
+    <main>
+        <div class="card">
+            <h1 class="titulo">Sign in</h1>
+            <p class="subtitulo">Stoy updated on your profissional word</p>
+            <input type="text" class="usuario" placeholder="Email or phone">
+            <input type="password" class="senha" placeholder="password">
+            <a href="#" class="link esqueceu_senha">Forgot password?</a>
+            <button class="login">Sign in</button>
+        </div>
+        <div class="criar_conta">
+            <p>New to LinkedIn? <a class="link" href="#">Join now</a></p>
+        </div>
+    </main>
+    <footer>
+        <span>LinkedIn @ 2021</span>
+        <a href="#">bem-vindo</a>
+        <a href="#">fala alguma coisa</a>
+        <a href="#">conta comigo</a>
+        <a href="#">pode falar</a>
+        <a href="#">boa sorte</a>
+        <a href="#">grande</a>
+        <a href="#">Language</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <style>
+        .cabecalho {
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .titulo_principal {
+            display: block;
+            font-size: 32px;
+            text-transform: uppercase;
+        }
+
+        .titulo_secundario {
+            font-size: 14px;
+        }
+
+        .paises {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 325px;
+            width: 546px;
+            position: relative;
+            margin: 0 auto;
+            /*background-color: yellow;*/
+        }
+
+        .paises_imagemcentral {
+            height: 183px;
+            width: 200px;
+        }
+
+        .paises nav {
+            height: 0;
+            width: 0;
+        }
+
+        .paises_idioma, .paises_artigos {
+            display: block;
+            text-align: center;
+        }
+        
+
+        .paises_item {
+            position: absolute;
+            /*background-color: green;*/
+        }
+
+        .paises_1 {
+            top: 0;
+            right: 60%;
+        }
+
+        .paises_2 {
+            top: 0;
+            left: 60%;
+        }
+
+        .paises_3 {
+            top: 20%;
+            right: 70%;
+        }
+
+        .paises_4 {
+            top: 20%;
+            left: 70%;
+        }
+
+        .paises_5 {
+            top: 40%;
+            right: 72%;
+        }
+
+        .paises_6 {
+            top: 40%;
+            left: 72%;
+        }
+
+        .paises_7 {
+            top: 60%;
+            right: 70%;
+        }
+
+        .paises_8 {
+            top: 60%;
+            left: 70%;
+        }
+
+        .paises_9 {
+            top: 80%;
+            right: 60%;
+        }
+
+        .paises_10 {
+            top: 80%;
+            left: 60%;
+        }
+
+        .busca_container {
+            width: fit-content;
+            margin: 10px auto;
+            border: 1px solid #999999;
+        }
+
+        .busca_texto, .busca_idioma,
+        .busca_botao {
+            border: none;
+        }
+
+        .busca_menu {
+            width: fit-content;
+            margin: 10px auto;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class="titulo">
+            <span class="titulo_principal">Wikipedia</span>
+            <samp class="titulo-secundario">The Free Encyclopedia</samp>
+        </h1>
+    </header>
+
+    <section class="paises">
+        <img src="https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2.png" alt="Wikipedia" class="paises_imagemcentral">
+        <nav>
+            <ul class="paises_menu">
+                <li class="paises_item paises_1">
+                    <a href="#">
+                        <span class="paises_idioma">English</span>
+                        <span class="paises_artigos">6 326 000+ articles</span>
+                    </a>
+                </li>
+                <li class="paises_item paises_2">
+                    <a href="#">
+                        <span class="paises_idioma">Deustsch</span>
+                        <span class="paises_artigos">6 326 000+ articles</span>
+                    </a>
+                </li>
+                <li class="paises_item paises_3">
+                    <a href="#">
+                        <span class="paises_idioma">Français</span>
+                        <span class="paises_artigos">6 326 000+ articles</span>
+                    </a>
+                </li>
+                <li class="paises_item paises_4">
+                    <a href="#">
+                        <span class="paises_idioma">Italiano</span>
+                        <span class="paises_artigos">6 326 000+ articles</span>
+                    </a>
+                </li>
+                <li class="paises_item paises_5">
+                    <a href="#">
+                        <span class="paises_idioma">Português</span>
+                        <span class="paises_artigos">6 326 000+ articles</span>
+                    </a>
+                </li>
+                <li class="paises_item paises_6">
+                    <a href="#">
+                        <span class="paises_idioma">Español</span>
+                        <span class="paises_artigos">6 326 000+ articles</span>
+                    </a>
+                </li>
+                <li class="paises_item paises_7">
+                    <a href="#">
+                        <span class="paises_idioma">PycckNNN</span>
+                        <span class="paises_artigos">6 326 000+ articles</span>
+                    </a>
+                </li>
+                <li class="paises_item paises_8">
+                    <a href="#">
+                        <span class="paises_idioma">Guiné</span>
+                        <span class="paises_artigos">6 326 000+ articles</span>
+                    </a>
+                </li>
+                <li class="paises_item paises_9">
+                    <a href="#">
+                        <span class="paises_idioma">Polski</span>
+                        <span class="paises_artigos">6 326 000+ articles</span>
+                    </a>
+                </li>
+                <li class="paises_item paises_10">
+                    <a href="#">
+                        <span class="paises_idioma">Senegal</span>
+                        <span class="paises_artigos">6 326 000+ articles</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+
+
+    <section class="busca">
+        <form action="#">
+            <div class="busca_container">
+                <input type="text" class="busca_texto">
+                <select name="idioma" id="idioma" class="busca_idioma">
+                    <option value="pt" selected>PT</option>
+                    <option value="br" lang="de">PT</option>
+                    <option value="br" lang="de">PT</option>
+                    <option value="br" lang="de">PT</option>
+                    <option value="br" lang="de">PT</option>
+                    <option value="br" lang="de">PT</option>
+                    <option value="br" lang="de">PT</option>
+                    <option value="br" lang="de">PT</option>
+                    <option value="br" lang="de">PT</option>
+                    <option value="br" lang="de">PT</option>
+                    <option value="br" lang="de">PT</option>
+                    <option value="br" lang="de">PT</option>
+                    <option value="br" lang="de">PT</option>
+                    <option value="br" lang="de">PT</option>
+                    <option value="br" lang="de">PT</option>
+                    <option value="br" lang="de">PT</option>
+                    <option value="br" lang="de">PT</option>
+                    <option value="br" lang="de">PT</option>
+                    <option value="br" lang="de">PT</option>
+                    <option value="br" lang="de">PT</option>
+                </select>
+                <button class="busca_botao" type="submit"><FontAwesomeIcon icon="fa-solid fa-magnifying-glass" /></button>
+
+                <div class="busca_menu">
+                    <button class="busca_menu_idiomas">Read Wikipedia in your language</button>
+                </div>
+            </div>
+        </form>
+    </section>
+</body>
+</html>

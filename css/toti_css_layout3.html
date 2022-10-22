@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body > * {
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        body {
+            min-height: 100vh; /*isso você esta falando que tamanho minino do corpa da pagina via ser de 100vh*/
+            display: grid;
+            /*grid-template-columns: 70% 30%;         /*isso serve para fazer divisão da colunas, outro que vai ficar na direita é outro que vai ficar na esquerda*/
+            /*grid-template-columns: 200px auto;      /* isso é a mesma coisa, pois uma coluna vai ficar maior e outro vai ficar fixa*/
+            grid-template-columns: 2fr 1fr /* isso fala que uma coluna vai ser dividido duas parte para primeira e uma para segunda*/
+            grid-template-rows: 80px 200px auto auto 200px 50px;
+            column-gap: 30px; /*isso serve para dar espaçamento entre as linhas*/
+            row-gap: 20px; /*isso serve para dar espaçamento entre as linhas */
+        }   
+
+
+        .cabecalho {
+            background-color: red;
+            grid-column: 1 / 3; /*isso serve para deixar o cabeçalho sozinho no topo tudo, vai ocupar linha todu*/
+        }
+
+        .publicidade-topo {
+            background-color: orange;
+            grid-column: 1 / span 2; /* isso serve para ocupar duas colunas, ou seja você esta dizendo para ele acupar duas colunas*/
+        }
+
+        .conteudo {
+            background-color: gray;
+            grid-row: 3 / span 2; /*esta dizendo que vai começar na terçeira e ocupa duas. ai o que estava em baixo dele vai pra lateral*/
+        }
+
+        .lateral {
+            background-color: darkgray;
+        }
+
+        .publicidade-lateral {
+            background-color: gold;
+        }
+
+        .publicidade-final {
+            background-color: darkorange;
+            grid-column-start: 1; /*isso você esta dizendo que vai começar na 1*/
+            grid-column-end: 3;
+        }
+
+        .rodape {
+            background-color: red;
+            grid-column: 1 / 3;
+        }
+    </style>
+</head>
+<body>
+    <header class="cabecalho">Cabeçalho</header>
+    <div class="publicidade-topo">Publicidade topo</div>
+    <main class="conteudo">Conteudo</main> <!--isso é conteúdo que fica na lateral, que é na parte direito que mostra o conteúdo mais lidas-->
+    <aside class="lateral">Mais lidas</aside> <!--isso é conteúdo principal que fica na esquerda-->
+    <div class="publicidade-lateral">Publicidade lateral</div>
+    <div class="publicidade-final">Publicidade final</div>
+    <footer class="rodape">Rodapé</footer> <!--isso serve para fazer rodapé de um site-->
+</body>
+</html>
