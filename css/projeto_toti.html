@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body > * {
+            text-align: center;
+            color: rgb(102, 102, 102);
+            background: rgb(241, 241, 241);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 0;
+            box-sizing: border-box
+        }
+
+        .cabecalho {
+            display: flex;
+
+            
+            text-align: center;
+            background-color: #80b800;
+            
+            padding: 17px;
+            font-family: sans-serif;
+            justify-content: flex-end;
+            font-weight: 100;
+        }
+
+        .animacao {
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 1px;
+            justify-content: flex-end;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+        }
+        ul > li{
+            display: inline-block;
+            padding: 0px;
+            margin: 0px;
+            font-size: 20px;
+            padding: 5px;
+            margin: 0px;
+            background-color: springgreen;
+        }
+        ul > li:hover {
+            background-color: teal;
+            cursor: pointer;
+            color: wheat;
+        }
+
+        .conteiner {
+            width: 50%;
+            height: 40vh;
+            
+        }
+
+        .box {
+            width: 500px;
+            position: absolute;
+            left: 30%;
+            transform: translate(-0%, -0%);
+        }
+
+        
+         .avatar {
+            font-family: "Helvetica Neue" sans-serif;
+            font-size: 58px;
+            color: #ffffff;
+            background-color: #02887A;
+            height: 96px;
+            width: 96px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;*/
+
+        }
+
+        .avatar_imagem {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+             
+        }
+
+        .avatar_badge {
+            position: absolute;
+            bottom: 0;
+            color: #000000;
+            background-color: #80b800;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        
+        #conteudo {
+            
+            background-color: thistle;
+            width: 500;
+            margin: auto;
+        }
+
+        #linha1 {
+            display: flex;
+            flex-direction: row;
+            height: 300px;
+            background-color: #fff;
+            justify-content: space-evenly;
+        }
+
+        #linha1 > div {
+            background-color: aquamarine;
+            width: 25%;
+            padding: 1%;
+            height: 200px;
+            align-self: center;
+        }
+
+        #noticia1:hover {
+            height: 400px;
+        }
+
+        #noticia1 {
+            transition: height 2s;
+        }
+
+        #fonte {
+            padding: 0%;
+            margin: auto;
+        }
+
+        .rodape `{
+            width: 500px;
+            left: 30%;
+            transform: translate(-50%, -50%);
+        }
+
+
+
+
+        .rodape {
+            background-color: salmon;
+        }
+        h1 {
+            color: red;
+            font-size: 45px;
+        }
+        input {
+            display: block;
+            margin-bottom: 20px;
+            background-color: seagreen;
+            
+        }
+        label {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .tracejado {
+            border: dashed 2px rgb(155, 32, 32);
+            background-color: steelblue;
+        }
+        #campo_email {
+            height: 45px;
+            background-color: yellowgreen;
+        }
+
+        form {
+            display: block;
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            right: 5px
+            background-color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <p>
+            <div class="">
+                <div class="avatar">
+                    <img src="imagem1.jpg" alt="" class="avatar_imagem">
+                    
+                </div>
+                <ul>
+               <a href="exemplo7.html"> CADASTRE-SE:</a>
+               <a href="tabela_avancado.html"> TABELAS:</a>
+               <a href="exemplo2.html">CONTE-NOS:</a>
+               <a href="exemplo4.html">SOBRE_NOS:</a>
+            </div>
+
+                
+                </ul>
+            </p>
+    </header>
+    <div class="animacao">
+            <p>
+                <ul>
+            <li>SPRESENTAÇÃO</li>
+            <li>INFORMAÇÃO:</li>
+            <li>DEMOSTRAÇÃO:</li>
+            <li>DESCRIÇÃO:</li>
+            <li>CONTEÚDO:</li>
+                    
+    
+                </ul>
+            </p>
+        <div class="avatar">
+            <img src="imagem1.jpg" alt="" class="avatar_imagem">
+            <samp class="avatar_badge"><img class="avatar_badge" src="https://archive.org/services/img/github.com-github-codeql_-_2021-02-28_18-12-37" alt=""></samp>
+            
+        </div>
+    <div>
+        <img src="https://thumbs.dreamstime.com/b/pedras-pequenas-pretas-369453.jpg" alt="imagem bonita" width="100%" height="300px">
+    </div>
+    
+    <main>
+        <p>IVANILDO PINTO MIRANDA <br><em>Desenvolvedor Front-end</em></p><br>
+        <div class="conteiner">
+            <div class="box">
+                <p><strong>Olá:<br>Sou Ivanildo Pinto Miranda<br>
+                    sou da nacionalidade Guineense, moro aque no Brasil há 4 anos a caminho de 5. <br>
+                    sou estudante da tecnologia e segurança da informação. Sou amante da tecnologia, pois o meu sonho é mim formar <br>
+                    e entrar no mercado da tecnologia, pois o meu sonho maior é trabalhar na área da tecnologia, para que posso <br>
+                    aplicar tudo que aprendi na minha vida Acadêmica. adquiridos no decorer da minha minha vida proficional, objetivando o benefício e o crescimento
+                    da organização.
+                </p>
+            </div>
+        </div>       
+            <section id="linha1">
+                <div id="noticia1" class="noticia">
+                    <strong>Empresa: Hortmix - ajudante de produção-07/01/2020</strong><br><br>
+                    <strong>Funções Atuais:</strong>Conferência de entrada de marteriais; organização e manuteção de estoque;<br>
+                    ispecionar o estado das mercadorias; preparar a documentação de saída; separar os lotes;<br>
+                    conforme região e/ou ordem de retirada; controle de saída de carga; registro de <br>
+                    gerenciamento interno; endereçamento; participação na manutenção e organização do <br>
+                    ambiente de trabalho; inventários; cordenação de estoque.
+                </div>
+                <div id="noticia2" class="noticia">       
+                    
+                    <strong>Considerações Finais</strong><br>
+                    Nunca trabalhei com <em>Tecnologia,</em> o meu sonho maior é entrar no mercado da tecnologia, julgo-me apto para <br>
+                    exercer a Função que for desempenhado na certeza de não haver decepções de ambas as partes, ponho-me a disposição para <br>
+                    maiores esclarecimentos sobre o meu perfil de trabalho.
+                </div>
+                <div id="noticia3" class="noticia">
+                    <strong>Curso extras curriculares:</strong><br>
+                    Senai-Informática Básica e Avançada / Excel Avançado <br>
+                    Dio- Python Básico
+                    pacote Office. 
+                </div>
+            
+
+                
+
+                <!--<a href="inputs_basicos.html">pode clicar aq</a> <br>
+                <a href="toti_anotacao.html">clique aq para ver as minhas anotações</a>--->
+            </section>
+</main>
+
+    </p>
+</body>
+<footer>
+
+
+
+    <form action="" method="post">
+        <label > Nome </label>
+        <input type="text" name="nome">
+
+        <label> E-mail </label>
+        <input class="tracejado" id="campo_email" type="email" name="nome">
+
+        <label> Senha </label>
+        <input class="tracejado" type="password" name="senha">
+
+    </form>
+
+    <div id="box-exemplo"></div>
+    <p id="rodape">
+        <h1>Contato:</h1>
+        <h2>Quer entrar em contato comigo?</h2>
+        <h3>Prencha o Formulário ao lado e entrarei <br>
+        em contato o mais rápido possível</h3>
+        <h4>você também pode me emcontrar nasb <br>
+        seguintes redes sociais:</h4>
+            <div class="avatar">
+                <img src="imagem1.jpg" alt="" class="avatar_imagem">
+                <span class="avatar_badge"><img class="avatar_badge" src="http://1000logos.net/wp-content/uploads/2017/02/New-Instagram-logo.jpg" alt=""></span>
+            </div>
+             <br>
+                <a href="#">LinkedIn: Ivanildo Miranda</a>
+             <br>
+                <a href="#">Instagram: Miranda Ivanildo</a>
+            <br>
+            <br>
+            <a href="#">github: MirandaIvanildo</a>
+
+            <div class="avatar">
+                <img src="imagem1.jpg" alt="" class="avatar_imagem">
+                <span class="avatar_badge"><img class="avatar_badge" src="https://yt3.ggpht.com/-CepHHHB3l1Y/AAAAAAAAAAI/AAAAAAAAAAA/Z8MftqWbEqA/s900-c-k-no-mo-rj-c0xffffff/photo.jpg" alt=""></span>
+            </div>
+            <br>
+            <a href="#">Facebook: Ivanildo Pinto Miranda</a>
+</footer>
+
+
+</html>

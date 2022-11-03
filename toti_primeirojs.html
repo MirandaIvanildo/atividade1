@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conhecendo o DOM</title>
+    <style>
+        form {
+            margin: irem;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">Conhecendo o DOM</h1>
+    <div>
+        <p class="hello">Olá, mundo!!</p>
+        <p>Olá, DOM!!</p>
+        <p>O que mais?</p>
+    </div>
+    <button onclick="clickedButton()">clique em mim</button>
+
+    <form><br>
+        <label>
+            Tarefa:
+            <input id="newTsk" type="text">
+        </label>
+        <button type="button" id="btnAddTask()">Adicionar</button>
+    </form>
+
+    <ul id="tasklist"></ul>
+    <script src="scripts.js"></script>
+
+
+    <!--getElementById, significa obter o elemento da ID-->
+    <!--getElementByClassName, significa obter o elemento sobre o nome da classe--->
+    <!--getElementsByTagName, significa selecior por nome de tag-->
+
+</body>
+</html>
