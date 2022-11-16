@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA Picture of the Day</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header class="py-4 mb-4" style="background-color: cadetblue; color: white">
+        <h1>NASA picture of the Day</h1>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    </header>
+
+    <div>
+        <form>
+            <fieldset> <!--Isso serve para alinhar o elemento-->
+                <legend>Escolha o tipo de pesquisa</legend>
+                <input type="radio" id="search-type-random" name="search-type" value="random" checked>
+
+                <label for="search-type-random"> Imagens aleatóreas</label>
+                <input type="radio" name="search-type" id="search-type-date-range" value="date-range">
+                <label for="search-type-date-range"> Imagens por periodo</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Imagen Aliatório</legend>
+                <label for="random-qty">Quantidade</label>
+                <input name="random-qty" type="number" value="10">
+            </fieldset>
+
+            <fieldset>
+                <legend>Imagens por periodo</legend>
+                <label for="start-date">Data de inicio:</label>
+                <input id="start-date" type="date">       <!--star-date significa data do inicio-->
+                <label for="end-date">Data final:</label>
+                <input id="and-date" name="and-date" type="date">     <!--and-date significa data final-->
+            </fieldset>
+            <div>
+                <button type="submit">Pesquisa</button>
+            </div>
+        </form>
+    </div>
+
+
+    <section class="card1">
+        <div>
+
+            <article class="card mb-2 max-2" style="width: 18rem;">
+                <img class="card-img-top"
+                src="http://farm9.staticflickr.com/8445/7763429394_837a23640f_o.jpg" alt="">
+                <div class="card-body-top">
+                    <h3 class="card-body">Hale-Bopp The Great Comet of 1997</h3>
+                    <p class="card-text">
+                        Tem short years ago. comet Hale-Bopp rounded the sun and offered a dazzling spectacle
+                        in planet Earth`s night. [...]
+                    </p>
+                </div>
+            </article>
+
+            <article class="card mb-2 max-2" style="width: 18rem;">
+                <img class="card-img-top"
+                src="http://farm9.staticflickr.com/8445/7763429394_837a23640f_o.jpg" alt="">
+                <div class="card-body">
+                    <h3 class="cart-title">Hale-Bopp The Great Comet of 1997</h3>
+                    <p class="card-text">
+                        Tem short years ago. comet Hale-Bopp rounded the sun and offered a dazzling spectacle
+                        in planet Earth`s night. [...]
+                    </p>
+                </div>
+            </article>
+
+            <article class="card mb-2 max-2" style="width: 18rem;">
+                <img class="card-img-top"
+                src="http://farm9.staticflickr.com/8445/7763429394_837a23640f_o.jpg" alt="">
+                <div class="card-body">
+                    <h3 class="cart-title">Hale-Bopp The Great Comet of 1997</h3>
+                    <p class="card-text">
+                        Tem short years ago. comet Hale-Bopp rounded the sun and 
+                        offered a dazzling spectacle [...]
+                    </p>
+                </div>
+            </article>
+
+            <article class="card mb-2 max-2" style="width: 18rem;">
+                <img class="card-img-top"
+                src="http://farm9.staticflickr.com/8445/7763429394_837a23640f_o.jpg" alt="">
+                <div class="card-body">
+                    <h3 class="cart-title">Hale-Bopp The Great Comet of 1997</h3>
+                    <p class="card-text">
+                        Tem short years ago. comet Hale-Bopp rounded the sun and offered a dazzling spectacle
+                        in planet Earth`s night. [...]
+                    </p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

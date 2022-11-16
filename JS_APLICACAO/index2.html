@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function vallida() {
+
+            if(document.getElementById("idade").value == '') {
+                document.getElementById("idade").style.border = "solid 1px red";    
+            } else {
+                var idadeUsuario = document.getElementById("idade").value
+                if(idadeUsuario < 18) {
+                    alert('Cadastro apenas para maiores de 18 anos')
+                    document.getElementById("idede").style.border = "solid 1px red";
+                } else {
+                    document.getElementById("idade").style.border = "solid 1px green";
+                }
+            }
+            if(document.getElementById("nome").value == '') {
+                document.getElementById("nome").style.border = "solid 1px red";
+
+            }
+            if(document.getElementById("email").value == '') {
+                document.getElementById("email").style.border = "solid 1px red";
+
+            }
+
+
+        }
+
+    </script>
+</head>
+<body>
+    <form action="">
+        Nome <br>
+        <input type="text" id="nome"><br><br>
+
+        Idade <br>
+        <input type="text" id="idade"><br><br>
+
+        E-mail <br>
+        <input type="text" id="email"><br><br>
+
+        <input type="button" onclick="vallida()">
+    </form>
+</body>
+</html>
